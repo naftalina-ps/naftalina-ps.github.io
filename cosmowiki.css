@@ -1,0 +1,92 @@
+/*BARRA DE NAVEGAÇÃO*/
+body{
+    background-image: url(arstationWALL5.jpg);
+    background-color: #f1f0f0;
+    background-size: cover;
+    color: #fff;
+}
+.navbar-transparent{
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto do link na barra de navegação */
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-nav .nav-link.dropdown-toggle {
+    color: #fff;
+}
+
+/* Cor do texto do link do dropdown quando aberto */
+.navbar-nav .nav-link.dropdown-toggle.show {
+    color: rgb(200, 200, 200); 
+} 
+.logoname{
+    font-family: GRANDGALAXY;
+    color: aliceblue;
+}
+/*FIM DA BARRA DE NAVEGAÇÃO*/
+
+
+/* Defina o estilo para o contêiner do card */
+.card {
+    border: none; /* Remova a borda padrão */
+    background-color: #fff; /* Cor de fundo do card */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Evite que a imagem ultrapasse os limites do card */
+    margin: 0 auto; /* Centralize o card na página */
+}
+.card-container {
+    max-width: 300px; /* Defina o tamanho máximo da div que contém o card */
+    margin: 0 auto; /* Centralize a div na página */
+}
+/* Defina o estilo para o título do card */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+/* Defina o estilo para o texto do card */
+.card-text {
+    font-size: 16px;
+}
+  
+/* Defina o estilo para o texto de atualização do card */
+.card-text small {
+    color: #888; /* Cor do texto menor */
+}
+  
+/* Defina o estilo para a imagem de fundo do card */
+.card-img {
+    opacity: 0.7; /* Opacidade da imagem */
+}
+  
+/* Defina o estilo para a sobreposição do card (conteúdo sobre a imagem) */
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Cor do texto e elementos da sobreposição */
+    text-align: center;
+    padding: 30px;
+}
+  
+/* Estilo para quando o mouse passa sobre o card */
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Efeito de sombra ao passar o mouse */
+    transform: translateY(-5px); /* Levante o card ligeiramente ao passar o mouse */
+    transition: 0.3s ease-out; /* Efeito suave de transição */
+}
+  
+
+
+
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
