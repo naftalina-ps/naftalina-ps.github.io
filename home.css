@@ -1,0 +1,85 @@
+body{
+    background-image: url(arstationWALL5.jpg);
+    background-color: #f1f0f0;
+    background-size: cover;
+    color: #fff;
+}
+.navbar-transparent{
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto do link na barra de navegação */
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.logoname{
+    font-family: GRANDGALAXY;
+    color: aliceblue;
+}
+.carousel {
+    margin-top: o;
+}
+.carousel-item img {
+    width: 100%;
+    height: 600px; /* Define a altura das imagens */
+    object-fit: cover;
+}
+.content {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap; /* Adicionamos flex-wrap para que os itens sejam quebrados em linhas */
+    position: relative;
+}
+  
+.row {
+    width: 100%; /* Define a largura total da row para ocupar todo o espaço horizontal disponível */
+    left: 1%;
+    height: 50vh; /*ocupa metade da tela verticalmente*/
+    bottom: 0;
+}
+  
+.col-md-4 {
+    padding: 0; /* Removemos o padding padrão das colunas */
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    height: 100%; /* Para ocupar toda a altura disponível na coluna */
+    color: black;
+    flex-grow: 1; /* Faz os itens preencherem o espaço vertical disponível */
+    border-top: 2px inset #ffffffef; /* Adicionamos uma borda lateral entre os itens */
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.item hr {
+    border: none;
+    opacity: none;
+    border-bottom: 2px solid #000000; /* Adicione uma borda inferior às linhas */
+    width: 70%; /* Ajuste a largura das linhas como desejar */
+    margin: 10px auto; /* Centralize as linhas horizontalmente dentro do elemento .item */
+}
+  /* Remove a borda lateral */
+.item:last-child {
+    border-right: none;
+}
+.footer {
+    padding: 6px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+}
+.footer p {
+    margin: 0;
+}
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
