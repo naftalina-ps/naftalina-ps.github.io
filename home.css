@@ -51,7 +51,7 @@ body{
     height: 100%; /* Para ocupar toda a altura disponível na coluna */
     color: black;
     flex-grow: 1; /* Faz os itens preencherem o espaço vertical disponível */
-    border-top: 2px inset #ffffffef; /* Adicionamos uma borda lateral entre os itens */
+    border-top: 2px inset #1b1841; /* Adicionamos uma borda lateral entre os itens */
     flex-direction: column;
     align-items: center;
     display: flex;
