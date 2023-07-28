@@ -15,6 +15,14 @@ body{
 .navbar-nav .nav-link.active {
     color: #fff;
 }
+.navbar-nav .nav-link.dropdown-toggle {
+    color: #fff;
+}
+
+/* Cor do texto do link do dropdown quando aberto */
+.navbar-nav .nav-link.dropdown-toggle.show {
+    color: rgb(200, 200, 200); 
+} 
 .logoname{
     font-family: GRANDGALAXY;
     color: aliceblue;
