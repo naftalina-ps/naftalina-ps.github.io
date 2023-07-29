@@ -4,6 +4,10 @@ body{
     background-size: cover;
     color: #fff;
 }
+.logoname a {
+    text-decoration: none; /* Remove o sublinhado da logo */
+    color: #fff; /* Define a cor do texto do link */
+}
 .navbar-transparent{
     background-color: transparent;
     box-shadow: none;
