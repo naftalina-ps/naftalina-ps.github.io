@@ -5,6 +5,10 @@ body{
     background-size: cover;
     color: #fff;
 }
+.logoname a {
+    text-decoration: none; /* Remove o sublinhado da logo */
+    color: #fff; /* Define a cor do texto do link */
+}
 .navbar-transparent{
     background-color: transparent;
     box-shadow: none;
@@ -31,7 +35,7 @@ body{
 /*FIM DA BARRA DE NAVEGAÇÃO*/
 
 
-/* Defina o estilo para o contêiner do card */
+/* Defina o estilo para o contêiner do card 1 */
 .card {
     border: none; /* Remova a borda padrão */
     background-color: #fff; /* Cor de fundo do card */
@@ -82,7 +86,11 @@ body{
     transform: translateY(-5px); /* Levante o card ligeiramente ao passar o mouse */
     transition: 0.3s ease-out; /* Efeito suave de transição */
 }
-  
+
+/* margem dos cards menores */
+.row{
+    margin: auto;
+}
 
 
 
