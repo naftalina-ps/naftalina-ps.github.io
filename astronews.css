@@ -1,0 +1,78 @@
+/*BARRA DE NAVEGAÇÃO*/
+body{
+    background-image: url(arstationWALL5.jpg);
+    background-color: #f1f0f0;
+    background-size: cover;
+    color: #fff;
+}
+.logoname a {
+    text-decoration: none; /* Remove o sublinhado da logo */
+    color: #fff; /* Define a cor do texto do link */
+}
+.navbar-transparent{
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto do link na barra de navegação */
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-nav .nav-link.dropdown-toggle {
+    color: #fff;
+}
+
+/* Cor do texto do link do dropdown quando aberto */
+.navbar-nav .nav-link.dropdown-toggle.show {
+    color: rgb(200, 200, 200); 
+} 
+.logoname{
+    font-family: GRANDGALAXY;
+    color: aliceblue;
+}
+/*fonte da logo*/
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
+/*FIM DA BARRA DE NAVEGAÇÃO*/
+
+/*Cards DE CIMA*/
+.card1 .card.text-bg-dark {
+    width: 30%; /* Ajuste a largura do card como desejar */
+    height: 60%; /* Ajuste a altura do card com relação à imagem */
+    position: absolute; /* Posição absoluta para mover o card */
+    top: 20%; /* Ajuste a distância do topo da tela */
+    left: 15%; /* Ajuste a distância da esquerda da tela */
+}
+
+.card2 .card.text-bg-dark{
+    width: 20%; /* Ajuste a largura do card como desejar */
+    height:30%; /* Ajuste a altura do card com relação à imagem */
+    position: absolute; /* Posição absoluta para mover o card */
+    top: 20%; /* Ajuste a distância do topo da tela */
+    left: 45%; /* Ajuste a distância da esquerda da tela */
+}
+.card3 .card.text-bg-dark{
+    width: 20%; /* Ajuste a largura do card como desejar */
+    height:30%; /* Ajuste a altura do card com relação à imagem */
+    position: absolute; /* Posição absoluta para mover o card */
+    top: 50%; /* Ajuste a distância do topo da tela */
+    left: 45%; /* Ajuste a distância da esquerda da tela */
+}
+.card4 .card.text-bg-dark{
+    width: 20%; /* Ajuste a largura do card como desejar */
+    height:30%; /* Ajuste a altura do card com relação à imagem */
+    position: absolute; /* Posição absoluta para mover o card */
+    top: 20%; /* Ajuste a distância do topo da tela */
+    left: 65%; /* Ajuste a distância da esquerda da tela */
+}
+.card5 .card.text-bg-dark{
+    width: 20%; /* Ajuste a largura do card como desejar */
+    height:30%; /* Ajuste a altura do card com relação à imagem */
+    position: absolute; /* Posição absoluta para mover o card */
+    top: 50%; /* Ajuste a distância do topo da tela */
+    left: 65%; /* Ajuste a distância da esquerda da tela */
+}
