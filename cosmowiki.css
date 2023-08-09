@@ -84,6 +84,8 @@ body{
 .card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Efeito de sombra ao passar o mouse */
     transform: translateY(-5px); /* Levante o card ligeiramente ao passar o mouse */
+}
+.card{
     transition: 0.3s ease-out; /* Efeito suave de transição */
 }
 
