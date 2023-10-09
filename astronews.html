@@ -52,6 +52,7 @@
         <h4>AstroNews</h4>
       </div>
       <!--Cards1-->
+    <div>
       <div class="custom-card card1">
         <div class="card text-bg-dark float-start">
           <!--substitui aq pra colocar a tag <img src="" class="bd-placeholder-img bd-placeholder-img-lg card-img" alt="Card image">-->
@@ -132,6 +133,16 @@
           </div>
         </div>
       </div>
+          <?php
+          $query = "SELECT * FROM noticias";
+          $resultado = mysqli_query($conexao, $query);
+
+          if (!$resultado) {
+          die("Erro na consulta: " . myqli_error($conexao));
+          }
+          while ($row = mysqli_fetch_assoc($resultado)) {
+          echo "
+    </div>
       <hr>
 
 
