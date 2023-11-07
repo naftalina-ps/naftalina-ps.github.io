@@ -18,15 +18,16 @@ body{
 .text{
     margin: 5%;
     margin-bottom: 0;
-    width: 60%;
-    font-family: roboto;
+    width: 65%;
 }
 .button{
     text-align: center;
+    margin-top: 1%;
 }
 .logoname{
     margin-top: -5%;
     font-family: GRANDGALAXY;
+    text-shadow: 2px 2px 4px rgba(24, 24, 24, 0.7); /* Adiciona uma sombra de texto branca. */
 }
 .image{
     margin-left: 8%;
@@ -35,4 +36,13 @@ body{
 @font-face {
     font-family: GRANDGALAXY;
     src: url(GRANDGALAXY.otf) format('OpenType');
+}
+@font-face {
+    font-family: AltoneTrial-Regular;
+    src: url(AltoneTrial-Regular.ttf) format('OpenType');
+}
+h2{
+    font-family: AltoneTrial-Regular;
+    color: #f1f0f0;
+    text-shadow: 2px 2px 4px rgba(24, 24, 24, 0.7); /* Adiciona uma sombra de texto branca. */
 }
