@@ -1,0 +1,100 @@
+/*BARRA DE NAVEGAÇÃO*/
+body{
+    background-image: url(vialactea.jpg);
+    background-color: #f1f0f0;
+    background-size: cover;
+    color: #000000;
+}
+.logoname a {
+    text-decoration: none; /* Remove o sublinhado da logo */
+    color: #fff; /* Define a cor do texto do link */
+}
+.navbar-transparent{
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto do link na barra de navegação */
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-nav .nav-link.dropdown-toggle {
+    color: #fff;
+}
+
+/* Cor do texto do link do dropdown quando aberto */
+.navbar-nav .nav-link.dropdown-toggle.show {
+    color: rgb(200, 200, 200); 
+} 
+.logoname{
+    font-family: GRANDGALAXY;
+    color: aliceblue;
+}
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
+/*FIM DA BARRA DE NAVEGAÇÃO*/
+
+.sol img { /*sol*/
+    position: relative;
+    margin-left: 0%;
+    margin-top: 10%;
+}
+
+.mercurio img { /*mercurio*/
+    position: relative;
+    margin-right: 25%; /*as posicionadas com float-end mudam a direção do margin*/
+    margin-top: 18%;
+    max-width: 4%; /*ajusta o tamanho das imagens*/
+}
+.venus img { /*venus*/
+    position: absolute;
+    margin-left: -24%; 
+    margin-top: 16%;
+    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+}
+.terra img { /*terra*/
+    position: absolute;
+    margin-left: -18%; 
+    margin-top: 16%;
+    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+}
+.lua img { /*lua*/
+    position: absolute;
+    margin-left: -14%; 
+    margin-top: 16%;
+    max-width: 2%; /*ajusta o tamanho das imagens*/ 
+}
+.marte img { 
+    position: absolute;
+    margin-left: -12%; 
+    margin-top: 17%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/ 
+}
+.jupiter img { 
+    position: absolute;
+    margin-left: -6%; 
+    margin-top: 16%;
+    max-width: 9%; /*ajusta o tamanho das imagens*/ 
+}
+.saturno img { 
+    position: absolute;
+    margin-left: 3%; 
+    margin-top: 16%;
+    max-width: 15%; /*ajusta o tamanho das imagens*/ 
+}
+.urano img { 
+    position: absolute;
+    margin-left: 17%; 
+    margin-top: 16%;
+    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+}
+.netuno img { 
+    position: absolute;
+    margin-left: 24%; 
+    margin-top: 16%;
+    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+}
