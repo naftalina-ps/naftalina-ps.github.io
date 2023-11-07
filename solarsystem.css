@@ -36,65 +36,140 @@ body{
     font-family: GRANDGALAXY;
     src: url(GRANDGALAXY.otf) format('OpenType');
 }
+@font-face {
+    font-family: AltoneTrial-Regular;
+    src: url(AltoneTrial-Regular.ttf) format('OpenType');
+}
 /*FIM DA BARRA DE NAVEGAÇÃO*/
+.title {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-items: center;
+    font-family: GRANDGALAXY;
+    
+}
+p{
+    font-family: AltoneTrial-Regular;
+    color: #f1f0f0;
+}
+.paragrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .sol img { /*sol*/
-    position: relative;
+    position: absolute;
     margin-left: 0%;
-    margin-top: 10%;
+    margin-top: 2%;
+    max-width: 35%;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.sol:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem quando o mouse estiver sobre a div .sol. */
 }
 
 .mercurio img { /*mercurio*/
-    position: relative;
-    margin-right: 25%; /*as posicionadas com float-end mudam a direção do margin*/
-    margin-top: 18%;
-    max-width: 4%; /*ajusta o tamanho das imagens*/
+    position: absolute;
+    margin-left: 20%; /*as posicionadas com float-end mudam a direção do margin*/
+    margin-top: 14%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.mercurio:hover img {
+    transform: scale(1.1);
 }
 .venus img { /*venus*/
     position: absolute;
-    margin-left: -24%; 
-    margin-top: 16%;
-    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+    margin-left: 25%; 
+    margin-top: 13%;
+    max-width: 7%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.venus:hover img {
+    transform: scale(1.1);
 }
 .terra img { /*terra*/
     position: absolute;
-    margin-left: -18%; 
-    margin-top: 16%;
-    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+    margin-left: 33%; 
+    margin-top: 13%;
+    max-width: 7%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
 }
+.terra:hover img {
+    transform: scale(1.1);
+}
+
 .lua img { /*lua*/
     position: absolute;
-    margin-left: -14%; 
-    margin-top: 16%;
-    max-width: 2%; /*ajusta o tamanho das imagens*/ 
+    margin-left: 38%; 
+    margin-top: 12%;
+    max-width: 3%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.lua:hover img {
+    transform: scale(1.1);
 }
 .marte img { 
     position: absolute;
-    margin-left: -12%; 
-    margin-top: 17%;
-    max-width: 5%; /*ajusta o tamanho das imagens*/ 
+    margin-left: 40%; 
+    margin-top: 14%;
+    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.marte:hover img {
+    transform: scale(1.1);
 }
 .jupiter img { 
     position: absolute;
-    margin-left: -6%; 
-    margin-top: 16%;
-    max-width: 9%; /*ajusta o tamanho das imagens*/ 
+    margin-left: 48%; 
+    margin-top: 13%;
+    max-width: 10%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.jupiter:hover img {
+    transform: scale(1.1);
 }
 .saturno img { 
     position: absolute;
-    margin-left: 3%; 
-    margin-top: 16%;
-    max-width: 15%; /*ajusta o tamanho das imagens*/ 
+    margin-left: 60%; 
+    margin-top: 14%;
+    max-width: 17%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.saturno:hover img {
+    transform: scale(1.1);
 }
 .urano img { 
     position: absolute;
-    margin-left: 17%; 
-    margin-top: 16%;
-    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+    margin-left: 78%; 
+    margin-top: 14%;
+    max-width: 7%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.urano:hover img {
+    transform: scale(1.1);
 }
 .netuno img { 
     position: absolute;
-    margin-left: 24%; 
-    margin-top: 16%;
-    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+    margin-left: 87%; 
+    margin-top: 14%;
+    max-width: 7%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.netuno:hover img {
+    transform: scale(1.1);
 }
