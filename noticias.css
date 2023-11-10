@@ -1,0 +1,96 @@
+/*BARRA DE NAVEGAÇÃO*/
+body{
+    background-image: url(arstationWALL6.jpg);
+    background-color: #f1f0f0;
+    background-size: cover;
+    color: #000000;
+}
+.logoname a {
+    text-decoration: none; /* Remove o sublinhado da logo */
+    color: #fff; /* Define a cor do texto do link */
+}
+.navbar-transparent{
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto do link na barra de navegação */
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-nav .nav-link.dropdown-toggle {
+    color: #fff;
+}
+
+/* Cor do texto do link do dropdown quando aberto */
+.navbar-nav .nav-link.dropdown-toggle.show {
+    color: rgb(200, 200, 200); 
+} 
+.logoname{
+    font-family: GRANDGALAXY;
+    color: aliceblue;
+}
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
+@font-face {
+    font-family: AltoneTrial-Regular;
+    src: url(AltoneTrial-Regular.ttf) format('OpenType');
+}
+p{
+    font-family: AltoneTrial-Regular;
+    color: #f1f0f0;
+}
+/*FIM DA BARRA DE NAVEGAÇÃO*/
+/*opacidade do fundo*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.511); /* Cor de fundo com opacidade (0.5 neste caso) */
+}
+.center-rectangle {
+    position: absolute;
+    top: 10%; /* Ajuste conforme necessário para posicionar o retângulo verticalmente */
+    left: 15%; /* Ajuste conforme necessário para posicionar o retângulo horizontalmente */
+    width: 70%; /* Largura do retângulo */
+    height: 100%; /* Altura do retângulo */
+    background-color: rgb(255, 255, 255); /* Cor de fundo com opacidade (0.8 neste caso) */
+    border-radius: 15px; /* Valor do raio para arredondar as bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.777);/*ox shadow com valores ajustáveis */
+    z-index: 1; /* Coloque o retângulo acima do pseudo-elemento */
+}
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-items: center;
+    max-width: 70%; /* Defina o valor máximo desejado para a largura */
+    margin-left: auto;
+    margin-right: auto;
+}
+.inline_text{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-items: center;
+    max-width: 70%; /* Defina o valor máximo desejado para a largura */
+    margin-left: auto;
+    margin-right: auto;
+}
