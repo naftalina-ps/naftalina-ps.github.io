@@ -81,13 +81,11 @@ body{
 }
 .footer {
     padding: 6px 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: #343a40; /* Cor de fundo do rodapé */
     color: #fff; /* Cor do texto do rodapé */
 }
+
 .footer p {
     margin: 0;
 }
