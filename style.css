@@ -42,7 +42,7 @@ body{
     src: url(Roboto-Regular.ttf) format('OpenType');
 }
 h2{
-    font-family: AltoneTrial-Regular;
+    font-family: Roboto;
     color: #f1f0f0;
     text-shadow: 2px 2px 4px rgba(24, 24, 24, 0.7); /* Adiciona uma sombra de texto branca. */
 }
