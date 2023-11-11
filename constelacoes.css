@@ -1,0 +1,127 @@
+/*BARRA DE NAVEGAÇÃO*/
+body{
+    background-image: url(arstationWALL5.jpg);
+    background-color: #f1f0f0;
+    background-size: cover;
+    color: #fff;
+}
+.logoname a {
+    text-decoration: none; /* Remove o sublinhado da logo */
+    color: #fff; /* Define a cor do texto do link */
+}
+.navbar-transparent{
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto do link na barra de navegação */
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-nav .nav-link.dropdown-toggle {
+    color: #fff;
+}
+
+/* Cor do texto do link do dropdown quando aberto */
+.navbar-nav .nav-link.dropdown-toggle.show {
+    color: rgb(200, 200, 200); 
+} 
+.logoname{
+    font-family: GRANDGALAXY;
+    color: aliceblue;
+}
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf) format('OpenType');
+}
+p{
+    font-family: Roboto;
+}
+/*FIM DA BARRA DE NAVEGAÇÃO*/
+.title {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-items: center;
+    font-family: GRANDGALAXY;
+}
+p{
+    font-family: Roboto;
+    color: #f1f0f0;
+}
+.paragrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*constelaçoes*/
+.cruzeiro img { 
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 5%;
+    max-width: 20%; /*tamanho da imagem*/
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.cruzeiro:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem quando o mouse estiver sobre a div .sol. */
+}
+.captionCruzeiro {
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    font-size: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffffcf;
+    width: 6%;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+
+.cruzeiro:hover .captionCruzeiro {
+    opacity: 1;
+}
+
+.ursaMaior img { 
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 2%;
+    max-width: 50%; /*tamanho da imagem*/
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.ursaMaior:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem quando o mouse estiver sobre a div .sol. */
+}
+.ursaMenor img { 
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 25%;
+    max-width: 45%; /*tamanho da imagem*/
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.ursaMenor:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem quando o mouse estiver sobre a div .sol. */
+}
+.Andromeda img { 
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 28%;
+    max-width: 45%; /*tamanho da imagem*/
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.Andromeda:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem quando o mouse estiver sobre a div .sol. */
+}
