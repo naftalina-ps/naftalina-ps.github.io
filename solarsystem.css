@@ -37,8 +37,12 @@ body{
     src: url(GRANDGALAXY.otf) format('OpenType');
 }
 @font-face {
-    font-family: AltoneTrial-Regular;
-    src: url(AltoneTrial-Regular.ttf) format('OpenType');
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf) format('OpenType');
+}
+p{
+    font-family: Roboto;
+    color: #f1f0f0;
 }
 /*FIM DA BARRA DE NAVEGAÇÃO*/
 .title {
@@ -50,17 +54,11 @@ body{
     font-family: GRANDGALAXY;
     
 }
-p{
-    font-family: AltoneTrial-Regular;
-    color: #f1f0f0;
-}
 .paragrafo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 .sol img { /*sol*/
     position: absolute;
     margin-left: 0%;
@@ -72,7 +70,24 @@ p{
 .sol:hover img {
     transform: scale(1.1); /* Aumenta a escala da imagem quando o mouse estiver sobre a div .sol. */
 }
+.captionSol {
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    font-size: 80%;
+    background-color: rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
 
+.sol:hover .captionSol {
+    opacity: 1;
+}
 .mercurio img { /*mercurio*/
     position: absolute;
     margin-left: 20%; /*as posicionadas com float-end mudam a direção do margin*/
@@ -83,6 +98,24 @@ p{
 }
 .mercurio:hover img {
     transform: scale(1.1);
+}
+.captionMercurio {
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+
+.mercurio:hover .captionMercurio {
+    opacity: 1;
 }
 .venus img { /*venus*/
     position: absolute;
@@ -95,6 +128,24 @@ p{
 .venus:hover img {
     transform: scale(1.1);
 }
+.captionVenus {
+    position: absolute;
+    top: 49%;
+    left: 26%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+
+.venus:hover .captionVenus {
+    opacity: 1;
+}
 .terra img { /*terra*/
     position: absolute;
     margin-left: 33%; 
@@ -105,6 +156,23 @@ p{
 }
 .terra:hover img {
     transform: scale(1.1);
+}
+.captionTerra {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.terra:hover .captionTerra {
+    opacity: 1;
 }
 
 .lua img { /*lua*/
@@ -118,6 +186,23 @@ p{
 .lua:hover img {
     transform: scale(1.1);
 }
+.captionLua {
+    position: absolute;
+    top: 44%;
+    left: 37%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.lua:hover .captionLua {
+    opacity: 1;
+}
 .marte img { 
     position: absolute;
     margin-left: 40%; 
@@ -128,6 +213,23 @@ p{
 }
 .marte:hover img {
     transform: scale(1.1);
+}
+.captionMarte {
+    position: absolute;
+    top: 52%;
+    left: 43%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.marte:hover .captionMarte {
+    opacity: 1;
 }
 .jupiter img { 
     position: absolute;
@@ -140,6 +242,23 @@ p{
 .jupiter:hover img {
     transform: scale(1.1);
 }
+.captionJupiter {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.jupiter:hover .captionJupiter {
+    opacity: 1;
+}
 .saturno img { 
     position: absolute;
     margin-left: 60%; 
@@ -150,6 +269,23 @@ p{
 }
 .saturno:hover img {
     transform: scale(1.1);
+}
+.captionSaturno {
+    position: absolute;
+    top: 52%;
+    left: 60%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.saturno:hover .captionSaturno {
+    opacity: 1;
 }
 .urano img { 
     position: absolute;
@@ -162,6 +298,23 @@ p{
 .urano:hover img {
     transform: scale(1.1);
 }
+.captionUrano {
+    position: absolute;
+    top: 52%;
+    left: 79%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.urano:hover .captionUrano {
+    opacity: 1;
+}
 .netuno img { 
     position: absolute;
     margin-left: 87%; 
@@ -172,4 +325,21 @@ p{
 }
 .netuno:hover img {
     transform: scale(1.1);
+}
+.captionNetuno {
+    position: absolute;
+    top: 52%;
+    left: 86%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.netuno:hover .captionNetuno {
+    opacity: 1;
 }
