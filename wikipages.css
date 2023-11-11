@@ -36,13 +36,20 @@ body{
     font-family: GRANDGALAXY;
     src: url(GRANDGALAXY.otf) format('OpenType');
 }
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf) format('OpenType');
+}
+p,h3,h4,h5{
+  font-family: Roboto;
+}
 /*FIM DA BARRA DE NAVEGAÇÃO*/
 
 
 /*O TAB*/
 .tab-wrap {
     transition: 0.3s box-shadow ease;
-    border-radius: 6px;
+    border-radius: 1%;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -98,11 +105,11 @@ body{
 }
 .container {
     margin: 0 auto;
-    display: block;
-    max-width: 800px;
+    display: flex;
+    max-width: 60%; /*tamanho do tab*/
   }
   .container > *:not(.tab-wrap) {
-    padding: 0 80px;
+    padding: 0 80%;
 }
 p {
     line-height: 1.6;
@@ -183,67 +190,67 @@ h3 {
 /*IMAGEM DA ESQUERDA*/
 .fixed-image {
   position: absolute;
-  top: 16%;
-  right: 52%;
+  margin-left: auto;
+  margin-top: auto;
+  padding: auto;
   z-index: 0; /* Garante que a imagem esteja na frente do conteúdo das abas */
-  padding: 0;
 }
 .fixed-image img {
-  max-width: 40%; /* Largura desejada */
-  max-height: 20%; /* Altura desejada */
+  max-width: 60%; /* Largura desejada */
 }
 
 /*retângulo*/
-.background-rectangle {
-  background-color: white; /* Cor de fundo branca */
+.center-rectangle {
   position: absolute;
-  top: 15%;
-  left: 13%;
-  right: 10%;
-  bottom: 15%;
-  z-index: -1; /* Coloca a div atrás do conteúdo */
-  
+  top: 10%; /* Ajuste conforme necessário para posicionar o retângulo verticalmente */
+  left: 15%; /* Ajuste conforme necessário para posicionar o retângulo horizontalmente */
+  width: 70%; /* Largura do retângulo */
+  height: 100%; /* Altura do retângulo */
+  overflow: auto;
+  background-color: rgb(255, 255, 255); /* Cor de fundo com opacidade (0.8 neste caso) */
+  border-radius: 15px; /* Valor do raio para arredondar as bordas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.777);/*ox shadow com valores ajustáveis */
+  z-index: 1; /* Coloque o retângulo acima do pseudo-elemento */
 }
 
-/* Estilos adicionais para o retângulo branco */
-/* Você pode ajustar esses estilos conforme necessário */
-.background-rectangle {
-  opacity: 10;
-}
-.container {
-  padding: 20px; /* Adicione algum espaçamento para separar o conteúdo do retângulo */
+.title-content {
+  position: absolute;
+  margin-left: 22%;
+  display: flex;
+  position: relative;
+  margin-top: 1%;
+  color: #cc0000;
 }
 
-.text-content {
+.text-content{
+  max-width: 50%;
   position: absolute;
-  margin-top: -23%; /* Define a margem superior para afastar o conteúdo do topo */
-  margin-left: 10%;
-  text-align: left; /* Alinhe o conteúdo ao centro, se necessário */
-  padding: 5%; /* Espaçamento interno para o conteúdo */
-  color: #fb0c0c;
+  margin-left: 4%;
+  display: flex;
+  position: relative;
+  margin-top: auto;
+  color: #cc0000;
 }
-.text-content p {
-  word-wrap: break-word;
-}
+
+
 hr {
-  width: 50%; /* Define a largura*/
+  width: 60%;
   margin-left: 1%;
-  border: none; /* Remove a borda padrão da linha */
-  height: 2px; /* Define a espessura da linha (opcional) */
-  background-color: #000; /* Define a cor da linha (opcional) */
+  border: none;
+  height: 2px;
+  background-color: #000000;
 }
 
 .more-conteudo {
   position: absolute;
-  width: 20%; /* Define uma largura máxima para a div */
-  margin-top: -37%;
-  margin-bottom: 10%; /* Define a margem superior para afastar o conteúdo do topo */
-  margin-left: 70%;
-  text-align: left; /* Alinhe o conteúdo ao centro, se necessário */
-  padding: 2%; /* Espaçamento interno para o conteúdo */
+  width: 21%;
+  margin-top: 1%; /* Ajuste a margem superior conforme necessário */
+  margin-left: 79%;
+  text-align: left;
+  padding: 2%;
   color: #fb0c0c;
-  flex-wrap: wrap;
 }
+
 .more-conteudo p {
   word-wrap: break-word;
 }
