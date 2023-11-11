@@ -1,0 +1,544 @@
+/*BARRA DE NAVEGAÇÃO*/
+body{
+    background-image: url(vialactea.jpg);
+    background-color: #f1f0f0;
+    background-size: cover;
+    color: #000000;
+}
+.logoname a {
+    text-decoration: none; /* Remove o sublinhado da logo */
+    color: #fff; /* Define a cor do texto do link */
+}
+.navbar-transparent{
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto do link na barra de navegação */
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-nav .nav-link.dropdown-toggle {
+    color: #fff;
+}
+
+/* Cor do texto do link do dropdown quando aberto */
+.navbar-nav .nav-link.dropdown-toggle.show {
+    color: rgb(200, 200, 200); 
+} 
+.logoname{
+    font-family: GRANDGALAXY;
+    color: aliceblue;
+}
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf) format('OpenType');
+}
+p{
+    font-family: Roboto;
+    color: #f1f0f0;
+}
+/*FIM DA BARRA DE NAVEGAÇÃO*/
+.title {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-items: center;
+    font-family: GRANDGALAXY;
+    
+}
+.paragrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*mercurio*/
+.marte img { 
+    position: absolute;
+    margin-left: 20%; /*as posicionadas com float-end mudam a direção do margin*/
+    margin-top: 10%;
+    max-width: 10%; /*ajusta o tamanho das imagens*/
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.marte:hover img {
+    transform: scale(1.1);
+}
+.captionMarte {
+    position: absolute;
+    top: 44%;
+    left: 20%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+
+.marte:hover .captionMarte {
+    opacity: 1;
+}
+.phobos img { /*mercurio*/
+    position: absolute;
+    margin-left: 28%; /*as posicionadas com float-end mudam a direção do margin*/
+    margin-top: 10%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.phobos:hover img {
+    transform: scale(1.1);
+}
+.captionPhobos {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+
+.phobos:hover .captionPhobos {
+    opacity: 1;
+}
+.deimos img { /*mercurio*/
+    position: absolute;
+    margin-left: 16%; /*as posicionadas com float-end mudam a direção do margin*/
+    margin-top: 12%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.deimos:hover img {
+    transform: scale(1.1);
+}
+.captionDeimos {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+
+.deimos:hover .captionDeimos {
+    opacity: 1;
+}
+/*TERRA E LUA*/
+.terra img { /*terra*/
+    position: absolute;
+    margin-left: 38%; 
+    margin-top: 10%;
+    max-width: 10%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.terra:hover img {
+    transform: scale(1.1);
+}
+.captionTerra {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.terra:hover .captionTerra {
+    opacity: 1;
+}
+
+.lua img { /*lua*/
+    position: absolute;
+    margin-left: 45%; 
+    margin-top: 9%;
+    max-width: 3%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.lua:hover img {
+    transform: scale(1.1);
+}
+.captionLua {
+    position: absolute;
+    top: 44%;
+    left: 42%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.lua:hover .captionLua {
+    opacity: 1;
+}
+.jupiter img { 
+    position: absolute;
+    margin-left: 63%; 
+    margin-top: 12%;
+    max-width: 10%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.jupiter:hover img {
+    transform: scale(1.1);
+}
+.captionJupiter {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.jupiter:hover .captionJupiter {
+    opacity: 1;
+}
+.Io img { 
+    position: absolute;
+    margin-left: 57%; 
+    margin-top: 12%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.Io:hover img {
+    transform: scale(1.1);
+}
+.captionIo {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.Io:hover .captionIo {
+    opacity: 1;
+}
+.Europa img { 
+    position: absolute;
+    margin-left: 62%; 
+    margin-top: 6%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.Europa:hover img {
+    transform: scale(1.1);
+}
+.captionEuropa {
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.Europa:hover .captionEuropa {
+    opacity: 1;
+}
+.Ganimedes img { 
+    position: absolute;
+    margin-left: 70%; 
+    margin-top: 7%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.Ganimedes:hover img {
+    transform: scale(1.1);
+}
+.captionGanimedes {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.Ganimedes:hover .captionGanimedes {
+    opacity: 1;
+}
+.Calisto img { 
+    position: absolute;
+    margin-left: 75%; 
+    margin-top: 10%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.Calisto:hover img {
+    transform: scale(1.1);
+}
+.captionCalisto {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.Calisto:hover .captionCalisto {
+    opacity: 1;
+}
+.saturno img { 
+    position: absolute;
+    margin-left: 17%; 
+    margin-top: 25%;
+    max-width: 20%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.saturno:hover img {
+    transform: scale(1.1);
+}
+.captionSaturno {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.saturno:hover .captionSaturno {
+    opacity: 1;
+}
+.enceladus img { 
+    position: absolute;
+    margin-left: 16%; 
+    margin-top: 40%;
+    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.enceladus:hover img {
+    transform: scale(1.1);
+}
+.captionEnceladus {
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.enceladus:hover .captionEnceladus {
+    opacity: 1;
+}
+.tethys img { 
+    position: absolute;
+    margin-left: 23%; 
+    margin-top: 40%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.tethys:hover img {
+    transform: scale(1.1);
+}
+.captionTethys {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.tethys:hover .captionTethys {
+    opacity: 1;
+}
+.mimas img { 
+    position: absolute;
+    margin-left: 30%; 
+    margin-top: 37%;
+    max-width: 5%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.mimas:hover img {
+    transform: scale(1.1);
+}
+.captionMimas {
+    position: absolute;
+    top: 96%;
+    left: 30%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.mimas:hover .captionMimas {
+    opacity: 1;
+}
+.dione img { 
+    position: absolute;
+    margin-left: 35%; 
+    margin-top: 32%;
+    max-width: 6%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.dione:hover img {
+    transform: scale(1.1);
+}
+.captionDione {
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.dione:hover .captionDione {
+    opacity: 1;
+}
+.netuno img { 
+    position: absolute;
+    margin-left: 55%; 
+    margin-top: 25%;
+    max-width: 12%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.netuno:hover img {
+    transform: scale(1.1);
+}
+.captionNetuno {
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.netuno:hover .captionNetuno {
+    opacity: 1;
+}
+
+.triton img { 
+    position: absolute;
+    margin-left: 55%; 
+    margin-top: 25%;
+    max-width: 7%; /*ajusta o tamanho das imagens*/ 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.triton:hover img {
+    transform: scale(1.1);
+}
+.captionTriton {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    font-size: 80%;
+    background-color:  rgba(25, 7, 7, 0.7);
+    color: #ffffffee;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: Roboto;
+}
+.triton:hover .captionTriton {
+    opacity: 1;
+}
