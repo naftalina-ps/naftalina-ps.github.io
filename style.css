@@ -38,8 +38,8 @@ body{
     src: url(GRANDGALAXY.otf) format('OpenType');
 }
 @font-face {
-    font-family: AltoneTrial-Regular;
-    src: url(AltoneTrial-Regular.ttf) format('OpenType');
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf) format('OpenType');
 }
 h2{
     font-family: AltoneTrial-Regular;
