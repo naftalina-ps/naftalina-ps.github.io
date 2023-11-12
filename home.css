@@ -81,7 +81,7 @@ p,h3,h4,h5{
 }
 .carousel-caption  {
     color: #f1f0f0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra de 2px de deslocamento horizontal, 2px de deslocamento vertical, 4px de desfoque, e cor preta com 50% de transparência */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adiciona uma sombra de 2px de deslocamento horizontal, 2px de deslocamento vertical, 4px de desfoque, e cor preta com 50% de transparência */
 }
 .carousel-caption p {
     font-size: 22px; /* Tamanho da fonte para o parágrafo (p) */
