@@ -185,6 +185,7 @@ h3 {
     left: 0;
     transform: translateY(-3px);
     border-radius: 6px;
+    color: #000000c5;
   }
 
 /*IMAGEM DA ESQUERDA*/
@@ -212,14 +213,20 @@ h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.777);/*ox shadow com valores ajustáveis */
   z-index: 1; /* Coloque o retângulo acima do pseudo-elemento */
 }
-
+b{
+  color: rgba(129, 16, 160, 0.664);
+}
+mark{
+  color: rgb(0, 0, 0);
+  background-color: rgba(129, 16, 160, 0.608);
+}
 .title-content {
   position: absolute;
-  margin-left: 22%;
+  margin-left: 20%;
   display: flex;
   position: relative;
   margin-top: 1%;
-  color: #cc0000;
+  color: rgb(0, 0, 0);
 }
 
 .text-content{
@@ -229,7 +236,7 @@ h3 {
   display: flex;
   position: relative;
   margin-top: auto;
-  color: #cc0000;
+  color: #000000;
 }
 
 
@@ -248,9 +255,22 @@ hr {
   margin-left: 79%;
   text-align: left;
   padding: 2%;
-  color: #fb0c0c;
+  color: #000000;
 }
 
 .more-conteudo p {
+  word-wrap: break-word;
+}
+.more-conteudo2 {
+  position: absolute;
+  width: 21%;
+  margin-top: 22%; /* Ajuste a margem superior conforme necessário */
+  margin-left: 79%;
+  text-align: left;
+  padding: 2%;
+  color: #000000;
+}
+
+.more-conteudo2 p {
   word-wrap: break-word;
 }
