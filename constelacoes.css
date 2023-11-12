@@ -5,6 +5,16 @@ body{
     background-size: cover;
     color: #fff;
 }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adicione a cor de fundo e a opacidade desejadas */
+    z-index: -1; /* Coloca a camada opaca atrás do conteúdo principal */
+}
 .logoname a {
     text-decoration: none; /* Remove o sublinhado da logo */
     color: #fff; /* Define a cor do texto do link */
