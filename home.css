@@ -110,6 +110,3 @@ p,h3,h4,h5{
 .item:last-child {
     border-right: none;
 }
-.lego_img img{
-    opacity: 60%;
-}
