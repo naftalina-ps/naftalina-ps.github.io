@@ -1,0 +1,283 @@
+/*BARRA DE NAVEGAÇÃO*/
+body{
+    background-image: url(arstationWALL5.jpg);
+    background-color: #f1f0f0;
+    background-size: cover;
+    color: #000000;
+}
+.logoname a {
+    text-decoration: none; /* Remove o sublinhado da logo */
+    color: #fff; /* Define a cor do texto do link */
+}
+.navbar-transparent{
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto do link na barra de navegação */
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-nav .nav-link.dropdown-toggle {
+    color: #fff;
+}
+
+/* Cor do texto do link do dropdown quando aberto */
+.navbar-nav .nav-link.dropdown-toggle.show {
+    color: rgb(200, 200, 200); 
+} 
+.logoname{
+    font-family: GRANDGALAXY;
+    color: aliceblue;
+}
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf) format('OpenType');
+}
+p,h3,h4,h5{
+  font-family: Roboto;
+}
+/*FIM DA BARRA DE NAVEGAÇÃO*/
+
+
+/*O TAB*/
+.tab-wrap {
+    transition: 0.3s box-shadow ease;
+    border-radius: 1%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    background-color: #fff;
+    margin: 40px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    justify-content: space-around;
+
+}
+.tab-wrap:hover {
+    box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+.tab {
+    display: none;
+}
+.tab:checked:nth-of-type(1) ~ .tab__content:nth-of-type(1) {
+    opacity: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    transform: translateY(0px);
+    text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(2) ~ .tab__content:nth-of-type(2) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(3) ~ .tab__content:nth-of-type(3) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(4) ~ .tab__content:nth-of-type(4) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    max-width: 60%; /*tamanho do tab*/
+  }
+  .container > *:not(.tab-wrap) {
+    padding: 0 80%;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+h2 {
+  margin: 0;
+  color: #444;
+  text-align: center;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.tab:first-of-type:not(:last-of-type) + label {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .tab:not(:first-of-type):not(:last-of-type) + label {
+    border-radius: 0;
+  }
+  .tab:last-of-type:not(:first-of-type) + label {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .tab:checked + label {
+    background-color: #fff;
+    box-shadow: 0 -1px 0 #fff inset;
+    cursor: default;
+  }
+  .tab:checked + label:hover {
+    box-shadow: 0 -1px 0 #fff inset;
+    background-color: #fff;
+  }
+  .tab + label {
+    box-shadow: 0 -1px 0 #eee inset;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    flex-grow: 3;
+    text-align: center;
+    background-color: #f2f2f2;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-align: center;
+    transition: 0.3s background-color ease, 0.3s box-shadow ease;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .tab + label:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 0 #f4f4f4 inset;
+  }
+  .tab__content {
+    padding: 10px 25px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+    transform: translateY(-3px);
+    border-radius: 6px;
+    color: #000000c5;
+  }
+
+/*IMAGEM DA ESQUERDA*/
+.fixed-image {
+  position: absolute;
+  margin-left: auto;
+  margin-top: auto;
+  padding: auto;
+  z-index: 0; /* Garante que a imagem esteja na frente do conteúdo das abas */
+}
+.fixed-image img {
+  max-width: 60%; /* Largura desejada */
+}
+
+/*retângulo*/
+.center-rectangle {
+  position: absolute;
+  top: 10%; /* Ajuste conforme necessário para posicionar o retângulo verticalmente */
+  left: 15%; /* Ajuste conforme necessário para posicionar o retângulo horizontalmente */
+  width: 70%; /* Largura do retângulo */
+  height: 100%; /* Altura do retângulo */
+  overflow: auto;
+  background-color: rgba(9, 9, 9, 0.901); /* Cor de fundo com opacidade (0.8 neste caso) */
+  border-radius: 15px; /* Valor do raio para arredondar as bordas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.777);/*ox shadow com valores ajustáveis */
+  z-index: 1; /* Coloque o retângulo acima do pseudo-elemento */
+}
+
+.title-content {
+  position: absolute;
+  margin-left: 15%;
+  display: flex;
+  position: relative;
+  margin-top: 1%;
+  color: #f3f3f3;
+}
+.title-contentCRUZEIRO {
+  position: absolute;
+  margin-left: 8%;
+  display: flex;
+  position: relative;
+  margin-top: 1%;
+  color: rgb(255, 255, 255);
+}
+
+.text-content{
+  max-width: 55%;
+  position: absolute;
+  margin-left: 4%;
+  display: flex;
+  position: relative;
+  margin-top: auto;
+  color: #f3f3f3;
+}
+b{
+  color: rgba(129, 16, 160, 0.664);
+}
+mark{
+  color: rgb(0, 0, 0);
+  background-color: rgba(129, 16, 160, 0.608);
+}
+hr {
+  width: 60%;
+  margin-left: 1%;
+  border: none;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.more-conteudo {
+  position: absolute;
+  width: 21%;
+  margin-top: 1%; /* Ajuste a margem superior conforme necessário */
+  margin-left: 79%;
+  text-align: left;
+  padding: 2%;
+  color: #ffffff;
+}
+
+.more-conteudo p {
+  word-wrap: break-word;
+}
+.more-conteudo2 {
+  position: absolute;
+  width: 21%;
+  margin-top: 22%; /* Ajuste a margem superior conforme necessário */
+  margin-left: 79%;
+  text-align: left;
+  padding: 2%;
+  color: #ffffff;
+}
+
+.more-conteudo2 p {
+  word-wrap: break-word;
+}
