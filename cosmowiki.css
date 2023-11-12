@@ -32,6 +32,17 @@ body{
     font-family: GRANDGALAXY;
     color: aliceblue;
 }
+@font-face {
+    font-family: GRANDGALAXY;
+    src: url(GRANDGALAXY.otf) format('OpenType');
+}
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf) format('OpenType');
+}
+p,h3,h4,h5{
+    font-family: Roboto;
+}
 /*FIM DA BARRA DE NAVEGAÇÃO*/
 
 
@@ -47,6 +58,14 @@ body{
 .card-container {
     max-width: 300px; /* Defina o tamanho máximo da div que contém o card */
     margin: 0 auto; /* Centralize a div na página */
+}
+.title{
+    color: #f1f0f0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.858);
+}
+.card-paragraph{
+    font-size: 22px; /* Tamanho da fonte para o parágrafo (p) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.858);
 }
 /* Defina o estilo para o título do card */
 .card-title {
@@ -84,19 +103,11 @@ body{
 .card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Efeito de sombra ao passar o mouse */
     transform: translateY(-5px); /* Levante o card ligeiramente ao passar o mouse */
-}
-.card{
     transition: 0.3s ease-out; /* Efeito suave de transição */
 }
 
 /* margem dos cards menores */
 .row{
     margin: auto;
-}
-
-
-
-@font-face {
-    font-family: GRANDGALAXY;
-    src: url(GRANDGALAXY.otf) format('OpenType');
+    max-width: 100%;
 }
