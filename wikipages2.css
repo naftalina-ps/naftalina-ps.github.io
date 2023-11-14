@@ -197,7 +197,7 @@ h3 {
   z-index: 0; /* Garante que a imagem esteja na frente do conteúdo das abas */
 }
 .fixed-image img {
-  max-width: 60%; /* Largura desejada */
+  max-width: 50%; /* Largura desejada */
 }
 
 /*retângulo*/
