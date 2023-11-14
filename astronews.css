@@ -37,42 +37,79 @@ body{
     font-family: GRANDGALAXY;
     src: url(GRANDGALAXY.otf) format('OpenType');
 }
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf) format('OpenType');
+}
+p{
+    font-family: Roboto;
+    color: #f1f0f0;
+}
 /*FIM DA BARRA DE NAVEGAÇÃO*/
-
-/*Cards DE CIMA*/
-.card1 .card.text-bg-dark {
-    width: 30%; /* Ajuste a largura do card como desejar */
-    height: 60%; /* Ajuste a altura do card com relação à imagem */
-    position: absolute; /* Posição absoluta para mover o card */
-    top: 20%; /* Ajuste a distância do topo da tela */
-    left: 15%; /* Ajuste a distância da esquerda da tela */
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: GRANDGALAXY;
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+    
 }
-
-.card2 .card.text-bg-dark{
-    width: 20%; /* Ajuste a largura do card como desejar */
-    height:30%; /* Ajuste a altura do card com relação à imagem */
-    position: absolute; /* Posição absoluta para mover o card */
-    top: 20%; /* Ajuste a distância do topo da tela */
-    left: 45%; /* Ajuste a distância da esquerda da tela */
+.row p, h5{
+    color: #000000;
+    font-family: Roboto;
+    
 }
-.card3 .card.text-bg-dark{
-    width: 20%; /* Ajuste a largura do card como desejar */
-    height:30%; /* Ajuste a altura do card com relação à imagem */
-    position: absolute; /* Posição absoluta para mover o card */
-    top: 50%; /* Ajuste a distância do topo da tela */
-    left: 45%; /* Ajuste a distância da esquerda da tela */
+.cartao1 {
+    max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    width: 100%; /* Garante que não ultrapasse a largura máxima */
 }
-.card4 .card.text-bg-dark{
-    width: 20%; /* Ajuste a largura do card como desejar */
-    height:30%; /* Ajuste a altura do card com relação à imagem */
-    position: absolute; /* Posição absoluta para mover o card */
-    top: 20%; /* Ajuste a distância do topo da tela */
-    left: 65%; /* Ajuste a distância da esquerda da tela */
+.cartao1 {
+    margin-top: 10%; 
+    display: flex; 
 }
-.card5 .card.text-bg-dark{
-    width: 20%; /* Ajuste a largura do card como desejar */
-    height:30%; /* Ajuste a altura do card com relação à imagem */
-    position: absolute; /* Posição absoluta para mover o card */
-    top: 50%; /* Ajuste a distância do topo da tela */
-    left: 65%; /* Ajuste a distância da esquerda da tela */
+.cartao2 {
+    max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    width: 100%; /* Garante que não ultrapasse a largura máxima */
+}
+.cartao2 {
+    margin-top: 10%;
+    margin-left: 12%; 
+    display: flex; 
+}
+.cartao3 {
+    max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    width: 100%; /* Garante que não ultrapasse a largura máxima */
+}
+.cartao3 {
+    margin-top: 10%; 
+    display: flex; 
+}
+.cartao4 {
+    max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    width: 100%; /* Garante que não ultrapasse a largura máxima */
+}
+.cartao4 {
+    margin-top: 10%;
+    margin-left: 12%; 
+    display: flex; 
+}
+.cartao5 {
+    max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    width: 100%; /* Garante que não ultrapasse a largura máxima */
+}
+.cartao5 {
+    margin-top: 10%; 
+    display: flex;
+    margin-bottom: 5%;  
+}
+.cartao6 {
+    max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    width: 100%; /* Garante que não ultrapasse a largura máxima */
+}
+.cartao6 {
+    margin-top: 10%;
+    margin-left: 12%;
+    margin-bottom: 5%; 
+    display: flex; 
 }
